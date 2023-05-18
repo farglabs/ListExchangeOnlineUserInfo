@@ -15,7 +15,7 @@ ForEach ($user In $users) {
 $user = Read-Host "Enter the email address of the user you want to view Exchange Online information for:"
 
 $exchangeOnlineUser = Get-EXOMailbox -Identity $user
-$exchangeOnlineUserStats = Get-EXOMailbox -Identity $user
+$exchangeOnlineUserStats = Get-EXOMailboxStatistics -Identity $user
 
 Write-Host User Name: $exchangeOnlineUser.UserPrincipalName
 Write-Host Email Address: $user
