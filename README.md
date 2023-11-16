@@ -2,6 +2,8 @@
 
 ### Preparation:
 
+Run the following PowerShell commands:
+
 ```
 Install-Module MSOnline
 Install-Module ExchangeOnlineManagement
